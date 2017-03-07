@@ -3,7 +3,7 @@ CPPFLAGS     =
 LDFLAGS      =
 LIBS         = -lm
 
-DESTDIR = ./
+DESTDIR = ./output/
 TARGET  = main
 
 OBJECTS := $(patsubst %.cpp,%.o,$(wildcard *.cpp))
@@ -20,4 +20,3 @@ clean:
 	-rm -f $(OBJECTS)
 	-rm -f $(TARGET)
 	-rm -f *.tga
-
